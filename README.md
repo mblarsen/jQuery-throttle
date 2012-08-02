@@ -41,13 +41,14 @@ Basically this peice of codes adds an onclick handler that will register each cl
 
 ## Options
 
-action: The callback you would normally attach to the element.
-init: An optional callback that is invoked every first event on the element.
-reset: An optional callback that is invoked on every event.
-update: An optional callback that is invoked when the event is throtteled. 
+action: The callback you would normally attach to the element.  
+init: An optional callback that is invoked every first event on the element.  
+reset: An optional callback that is invoked on every event.  
+update: An optional callback that is invoked when the event is throtteled.  
 
-timeout: The delay before invoking the action callback. Events are throtteled within this time. Default: 200ms
-max: The max time to throttle the event. Default 400ms
-state: An object that is passed to each of the above methods.
+timeout: The delay before invoking the action callback. Events are throtteled within this time. **Default: 200ms**  
+max: The max time to throttle the event. **Default: 400ms**  
+event: The event to throttle. **Default: click**  
+state: An object that is passed to each of the above methods.  
 
 If you want to maintain the state return it in each function: action, init, reset, update. If you don't the state will remain the same.
