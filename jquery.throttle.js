@@ -34,15 +34,15 @@
                 
             if (timer !== null && (params.max === 0 || timeDiff < params.max)) {
                 clearTimeout(timer);
-                if (typeof params.merge === "function") {
-                    params.state = params.merge(event, params.state) || params.state;
+                if (typeof params.update === "function") {
+                    params.state = params.update(event, params.state) || params.state;
                 }
             }
                 
             if (params.max === 0 || timeDiff < params.max) {
                 timer = setTimeout(
                     function() { 
-                        params.state = params.callback(event, params.state) || params.state;
+                        params.state = params.action(event, params.state) || params.state;
                         timer     = null;
                         startTime = null;
                         init      = false;
