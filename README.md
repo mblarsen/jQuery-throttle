@@ -48,7 +48,7 @@ update: An optional callback that is invoked when the event is throtteled.
 
 timeout: The delay before invoking the action callback. Events are throtteled within this time. **Default: 200ms**  
 max: The max time to throttle the event. **Default: 400ms**  
-event: The event to throttle. **Default: click**  
+event: The event to throttle. **Default: click**, but basically you can throttle any event.
 state: An object that is passed to each of the above methods.  
 
 If you want to maintain the state return it in each function: action, init, reset, update. If you don't the state will remain the same.
