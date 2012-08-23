@@ -29,7 +29,7 @@ A simple event throttler for jQuery. Best illustrated with an example from a rea
             return { qty: 1 };
         },
 		
-		// If the user is doesn't click again within 200ms we call the server
+		// If the user doesn't click again within 200ms we call the server
         timeout: 200,
 		
 		// However we cannot stall forever, so after 400ms the callback is invoked
