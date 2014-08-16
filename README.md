@@ -11,7 +11,7 @@ A simple event throttler for jQuery. Best illustrated with an example from a rea
         update: function (event, state) {
             state.qty += 1;
             return state;
-        }
+        },
 
 		// The actual work, posting to the server that the user wants
 		// to add qty number of products to the basket
